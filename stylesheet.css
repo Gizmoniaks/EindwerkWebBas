@@ -1,27 +1,75 @@
+body
+{
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: 73.33px auto 50px;
+    grid-template-areas: "titel bovenbalk" "Menu inhoud" "onderbalk onderbalk";
+}
+
+@keyframes color 
+{
+    0% {color: white;}
+    50% {color: rgb(197, 87, 14);}
+    100% { color: white; }
+}
+
+h1
+{
+   
+    grid-area: titel;
+    background-image: linear-gradient(rgb(197, 87, 14), white);
+    margin: 0;
+    animation-name: color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+nav
+{
+    grid-area: bovenbalk;
+    background-image: linear-gradient(rgb(197, 87, 14), white);
+    text-align: center;
+}
+
+
 nav li
 {
     display: inline-block;
 }
 
-
 nav a
 {
     text-decoration: none;
-    background-color: rgb(200, 200, 206);
     padding: 10px;
     color: black;  
 }
 
-nav a:hover
+nav li:hover
 {
-    background-color: rgb(100, 100, 106);
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+}
+
+nav li:hover a
+{
     color: white;
 }
 
-.CurrentPage :hover
+.CurrentPage:hover a
 {
-    background-color: rgb(200, 200, 206);
-    color: white;
+    color: rgb(41, 41, 48);
+}
+
+main
+{
+    grid-area: inhoud;
+    align-items: start;
+}
+
+footer
+{
+    grid-area: onderbalk;
+    background-image: linear-gradient(white, rgb(197, 87, 14));
 }
 
 input[type="text"]
