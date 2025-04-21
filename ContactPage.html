@@ -14,5 +14,29 @@
             <li Class="CurrentPage"><a href="ContactPage.html">Contact</a></li>
         </ul>
     </nav>
+    <header>
+        <h1>Vogels en vogelaars</h1>
+    </header>
+    <main>
+        <h2>Neem contact met ons op</h2>
+        <p>Heb je vragen of opmerkingen? Neem gerust contact met ons op.</p>
+        <form method="post" action="https:jkorpela.fi/cgi-bin/echo.cgi">
+            <label for="lastname">Achternaam: </label>
+            <input id="lastname" name="lastname" type="text"><br/>
+            <label for=""name">Voornaam: </label>
+            <input id="firstname" name=""firstname" type=""text"><br/>
+            <label for="streetname">Straatnaam: </label>
+            <input id="streetname" name="streetname" type="text"><br/>
+            <label for="postalcode">Postcode: </label>
+            <input id= "postalcode" name="postalcode" type="text"><br/>
+            <label for="city">Plaats: </label>
+            <input id="city" name="city" type="text"><br/>
+            <label for="email">E-mail: </label>
+            <input id="email" name="email" type="text" required><br/>
+            <label for="vraag">Bericht: </label><br/>
+            <textarea id="vraag" name="vraag" rows="4" cols="50" required></textarea><br/>
+            <input type="submit" value="Verstuur">
+        </form>
+
 </body>
 </html>
