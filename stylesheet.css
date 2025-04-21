@@ -23,3 +23,15 @@ nav a:hover
     background-color: rgb(200, 200, 206);
     color: white;
 }
+
+input[type="text"]
+{    
+    box-sizing: border-box;
+    margin-bottom : 10px;
+}
+
+select
+{
+    box-sizing: border-box;
+    margin-bottom : 10px;
+}
