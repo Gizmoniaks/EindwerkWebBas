@@ -3,20 +3,24 @@ body
     display: grid;
     grid-template-columns: auto 150px;
     grid-template-rows: auto auto 50px;
-    grid-template-areas: "titel logo" "inhoud menu" "onderbalk onderbalk";
+    grid-template-areas: "titel menu" "inhoud menu" "onderbalk onderbalk";
 }
 
 h1
 {
     grid-area: titel;
+    animation: fadeIn 3s;
     z-index: 100;
     left: 700px;
     top: 100px;
     position: absolute;
     color:white;
-    background-color: rgb(2, 2, 2);
+    background-color: rgb(71, 71, 71);
     opacity: 0.6;
-    margin: 20px;
+    top: -12px;
+    padding-top: 300px;
+    padding-bottom: 390px;
+    padding-right: 140px;
 }
 
 .backgroundImage
@@ -25,6 +29,13 @@ h1
     position: relative;
     left: 0;
     top: 0;
+}
+
+@keyframes fadeIn
+{
+    0% { transform: translateX(-800%); }
+    100% { transform: translateX(0%); }
+    
 }
 
 nav
