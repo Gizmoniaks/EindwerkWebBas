@@ -6,28 +6,18 @@ body
     grid-template-areas: "titel bovenbalk" "Menu inhoud" "onderbalk onderbalk";
 }
 
-@keyframes color 
-{
-    0% {color: white;}
-    50% {color: rgb(197, 87, 14);}
-    100% { color: white; }
-}
-
 h1
 {
    
     grid-area: titel;
-    background-image: linear-gradient(rgb(197, 87, 14), white);
+    background-color: rgb(197, 87, 14);
     margin: 0;
-    animation-name: color;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
 }
 
 nav
 {
     grid-area: bovenbalk;
-    background-image: linear-gradient(rgb(197, 87, 14), white);
+    background-color: rgb(197, 87, 14);
     text-align: center;
 }
 
@@ -40,6 +30,7 @@ nav li
 nav a
 {
     text-decoration: none;
+    margin-right: 20px;
     padding: 10px;
     color: black;  
 }
@@ -47,7 +38,7 @@ nav a
 nav li:hover
 {
     transform: scale(1.5);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
 nav li:hover a
@@ -69,6 +60,9 @@ main
 footer
 {
     grid-area: onderbalk;
+    position: absolute;
+    bottom:0;
+    width:100%;
     background-image: linear-gradient(white, rgb(197, 87, 14));
 }
 
