@@ -1,0 +1,25 @@
+nav li
+{
+    display: inline-block;
+}
+
+
+nav a
+{
+    text-decoration: none;
+    background-color: rgb(200, 200, 206);
+    padding: 10px;
+    color: black;  
+}
+
+nav a:hover
+{
+    background-color: rgb(100, 100, 106);
+    color: white;
+}
+
+.CurrentPage :hover
+{
+    background-color: rgb(200, 200, 206);
+    color: white;
+}
