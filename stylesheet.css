@@ -11,24 +11,28 @@ h1
     grid-area: titel;
     animation: fadeIn 3s;
     z-index: 100;
+    border-radius: 5px;
     left: 700px;
     top: 100px;
-    position: absolute;
+    position: relative;
     color:white;
     background-color: rgb(71, 71, 71);
     opacity: 0.6;
     top: -12px;
-    padding-top: 300px;
-    padding-bottom: 390px;
-    padding-right: 140px;
+    padding: 20px;
+    z-index: 2;
 }
+
+
 
 .backgroundImage
 {
+    grid-area: titel;
     width: 100%;
-    position: relative;
+    position: absolute;
     left: 0;
     top: 0;
+    z-index: 1;
 }
 
 @keyframes fadeIn
@@ -43,12 +47,17 @@ nav
     grid-area: menu;
     background-color: rgb(14, 139, 197);
     text-align: left;
+    position: flex;
+    z-index: 101;
+    border-radius: 15 px;
 }
+
 
 
 nav li
 {
     display: inline-block;
+    margin: 1em;
 }
 
 nav a
@@ -102,3 +111,31 @@ select
     margin-bottom : 10px;
 }
 
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.webshop
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.webshop img 
+{
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+}
