@@ -20,7 +20,7 @@
     <main>
         <h2>Neem contact met ons op</h2>
         <p>Heb je vragen of opmerkingen? Neem gerust contact met ons op.</p>
-        <form method="post" action="https:jkorpela.fi/cgi-bin/echo.cgi">
+        <form  class="ContactForm" method="post" action="https:jkorpela.fi/cgi-bin/echo.cgi">
             <label for="sex">Geslacht: </label>
             <label for="m">M: </label>
             <input id="male" name="sex" type="radio" value="M">
@@ -48,8 +48,8 @@
             </select><br/>
             <label for="vraag">Bericht: </label><br/>
             <textarea id="question" name="question" rows="4" cols="50" required></textarea><br/>
-            <input type="submit" value="Verstuur">
-            <input type="reset" value="Reset">
+            <input type="submit" value="Verstuur" class="btnContactPage">
+            <input type="reset" value="Reset" class="btnContactPage">
         </form>
 
 </body>
