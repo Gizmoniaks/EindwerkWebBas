@@ -183,3 +183,15 @@ select
     background-color: rgb(84, 167, 202);
     border: 2px solid rgb(0, 0, 0);
 }
+
+.btnTweety 
+{
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.btnTweety:hover
+{
+    cursor: pointer;
+}
