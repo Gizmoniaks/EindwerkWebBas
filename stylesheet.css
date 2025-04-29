@@ -1,7 +1,9 @@
 html 
 {
     font-family: "Roboto", sans-serif;
+    background-color:rgb(224, 230, 210)
 }
+
 
 body
 {
@@ -15,7 +17,7 @@ h1
 {
     grid-area: titel;
     animation: fadeIn 3s;
-    z-index: 100;
+    z-index: 1;
     border-radius: 5px;
     left: 700px;
     top: 100px;
@@ -28,7 +30,17 @@ h1
     z-index: 2;
 }
 
-
+h2
+{
+    position: relative;
+    text-align: center;
+    background-color: rgb(14, 139, 197);
+    color: white;
+    border: 2px solid rgb(14, 139, 197);
+    padding: 10px 20px;
+    border-radius: 15px 0 0 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 .backgroundImage
 {
@@ -126,13 +138,24 @@ select
     margin-top: 20px;
 }
 
+.containerWebshop 
+/* Probleem dat titels verdwijnen nog op te lossen*/
+{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
 .webshop
 {
+    height: 100%;;
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .webshopProduct 
@@ -185,13 +208,11 @@ select
     border-radius: 15px;
 }
     
-
 .btnBuy:hover
 {
     background-color: rgb(84, 167, 202);
     border: 2px solid rgb(0, 0, 0);
 }
-
 
 .ContactForm
 {
