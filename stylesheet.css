@@ -1,6 +1,6 @@
 html 
 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 body
@@ -130,10 +130,15 @@ select
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+}
+
+.webshopProduct 
+{
+    position: relative;
+    display: inline-block;
 }
 
 .webshop img 
@@ -142,9 +147,51 @@ select
     height: 400px;
     margin: 10px;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
     object-fit: cover;
 }
+
+.webshopProduct .btnBuy
+{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background-color: rgb(14, 139, 197);
+    color: white;
+    border: 2px solid rgb(14, 139, 197);
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.webshopProduct:hover .btnBuy
+{
+    display: block;
+    opacity: 1;
+}
+
+.webshopProduct .Price
+{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(14, 139, 197);
+    color: white;
+    border: 2px solid rgb(14, 139, 197);
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+    
+
+.btnBuy:hover
+{
+    background-color: rgb(84, 167, 202);
+    border: 2px solid rgb(0, 0, 0);
+}
+
 
 .ContactForm
 {
