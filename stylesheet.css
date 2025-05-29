@@ -17,11 +17,11 @@ h1
 {
     grid-area: titel;
     animation: fadeIn 3s;
-    z-index: 1;
+    text-align: center;
+    z-index: 3;
     border-radius: 5px;
     left: 700px;
     top: 100px;
-    position: relative;
     color:white;
     background-color: rgb(71, 71, 71);
     opacity: 0.6;
@@ -37,8 +37,8 @@ h2
     background-color: rgb(14, 139, 197);
     color: white;
     border: 2px solid rgb(14, 139, 197);
-    padding: 10px 20px;
-    border-radius: 15px 0 0 15px;
+    padding: 10px 200px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -46,10 +46,9 @@ h2
 {
     grid-area: titel;
     width: 100%;
-    z-index:1;
+    z-index: 1;
     left: 0;
     top: 0;
-    z-index: 1;
 }
 
 nav
@@ -58,7 +57,7 @@ nav
     background-color: rgb(14, 139, 197);
     text-align: left;
     position: flex;
-    z-index: 101;
+    z-index: 100;
     border-radius: 15 px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -139,11 +138,13 @@ select
 }
 
 .containerWebshop 
-/* Probleem dat titels verdwijnen nog op te lossen*/
 {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .webshop
@@ -275,7 +276,7 @@ select
     justify-content: center; 
     align-items: center; 
     cursor: pointer; 
-    z-index: 999; 
+    z-index: 101; 
     transition: transform 0.3s ease, background-color 0.3s ease;
     background-color: transparent;
 }
