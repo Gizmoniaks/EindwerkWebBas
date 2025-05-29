@@ -298,6 +298,7 @@ p
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    scrollbar-width: none;
 }
 
 .snap p 
@@ -310,6 +311,11 @@ p
     font-size: 2em;
     box-sizing: border-box;
     padding: 2em;
+}
+
+.snap::-webkit-scrollbar
+{
+    display: none;
 }
 
 .backgroundImageIndex 
@@ -325,13 +331,4 @@ p
     background-size: cover;
     background-position: center;
 }
-.header-overlay h1 {
-    position: relative;
-    z-index: 2;
-    color: white;
-    background: rgba(71, 71, 71, 0.6);
-    padding: 20px 40px;
-    border-radius: 5px;
-    text-align: center;
-    margin: 0;
-}
+
