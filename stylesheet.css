@@ -1,7 +1,7 @@
 html 
 {
     font-family: "Roboto", sans-serif;
-    background-color:rgb(224, 230, 210)
+    background-color:rgb(224, 230, 210);
 }
 
 
@@ -13,9 +13,13 @@ body
     grid-template-areas: "titel menu" "inhoud menu" "onderbalk onderbalk";
 }
 
+header
+{
+    grid-area: titel;
+}
+
 h1
 {
-    grid-area: titel; 
     top: 20px;
     text-align: center;
     border-radius: 5px;
@@ -51,12 +55,12 @@ h2
 
 nav
 {
+    display: grid;
     grid-area: menu;
     background-color: rgb(14, 139, 197);
     text-align: left;
-    position: flex;
     z-index: 3;
-    border-radius: 15 px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -71,7 +75,7 @@ nav ul
 
 nav li
 {
-    display: inline-block;
+    display: flex;
     margin: 1em;
 }
 
@@ -113,7 +117,7 @@ footer
     display: flex;
     bottom:0;
     width:100%;
-    background-color: rgb(14, 139, 197)
+    background-color: rgb(14, 139, 197);
 }
 
 input[type="text"]
@@ -149,7 +153,7 @@ select
 
 .webshop
 {
-    height: 100%;;
+    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
@@ -181,6 +185,7 @@ select
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
+    opacity: 0;
     background-color: rgb(14, 139, 197);
     color: white;
     border: 2px solid rgb(14, 139, 197);
@@ -291,7 +296,7 @@ p
     text-align: center;
     color: rgb(14, 139, 197);
     font-size: 1.2em;
-    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
 }
 
 .snap {
@@ -332,3 +337,44 @@ p
     background-position: center;
 }
 
+@media screen and (max-width: 60em) {
+    body {
+        grid-template-columns: auto;
+        grid-template-rows: 50px 50px auto 50px;
+        grid-template-areas: "menu" "titel" "inhoud" "onderbalk";
+        align-items: stretch;
+    }
+    nav {
+        height: 50px;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 480px) 
+{
+    body
+    {
+        grid-template-columns: auto;
+        grid-template-rows: 50px 200px auto 50px;
+        grid-template-areas: "menu" "titel" "inhoud" "onderbalk";
+    }
+
+    nav ul
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
