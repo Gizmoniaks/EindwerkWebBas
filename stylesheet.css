@@ -16,18 +16,23 @@ body
 h1
 {
     grid-area: titel;
-    animation: fadeIn 3s;
+    
     text-align: center;
-    z-index: 3;
     border-radius: 5px;
     left: 700px;
     top: 100px;
     color:white;
     background-color: rgb(71, 71, 71);
     opacity: 0.6;
-    top: -12px;
     padding: 20px;
-    z-index: 2;
+}
+
+.backgroundImage
+{
+    grid-area: titel;
+    width: 100%;
+    left: 0;
+    top: 0;
 }
 
 h2
@@ -42,14 +47,7 @@ h2
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.backgroundImage
-{
-    grid-area: titel;
-    width: 100%;
-    z-index: 1;
-    left: 0;
-    top: 0;
-}
+
 
 nav
 {
@@ -57,7 +55,7 @@ nav
     background-color: rgb(14, 139, 197);
     text-align: left;
     position: flex;
-    z-index: 100;
+    z-index: 3;
     border-radius: 15 px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -276,11 +274,42 @@ select
     justify-content: center; 
     align-items: center; 
     cursor: pointer; 
-    z-index: 101; 
+    z-index: 4; 
     transition: transform 0.3s ease, background-color 0.3s ease;
     background-color: transparent;
 }
 
 .chat:hover {
     transform: scale(1.1);
+}
+
+p
+{
+    text-align: center;
+    color: rgb(14, 139, 197);
+    font-size: 1.2em;
+    border: 1em solid rgb(255, 255, 255);
+    border-radius: 15px;
+    scroll-snap-type: mandatory;
+}
+
+.snap {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.snap p 
+{
+    height: 100vh;
+    overflow-y: scroll;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    font-size: 1.5em;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 2em;
 }
