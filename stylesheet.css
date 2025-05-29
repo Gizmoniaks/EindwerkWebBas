@@ -15,15 +15,15 @@ body
 
 h1
 {
-    grid-area: titel;   
+    grid-area: titel; 
+    top: 20px;
     text-align: center;
     border-radius: 5px;
-    left: 700px;
-    top: 100px;
     color:white;
     background-color: rgb(71, 71, 71);
     opacity: 0.6;
     padding: 20px;
+    z-index: 2;
 }
 
 .backgroundImage
@@ -32,6 +32,7 @@ h1
     width: 100%;
     left: 0;
     top: 0;
+    z-index: 1;
 }
 
 h2
@@ -76,10 +77,12 @@ nav li
 
 nav a
 {
+
     text-decoration: none;
     margin-right: 20px;
     padding: 10px 20px;
-    color: black;  
+    color: rgb(255, 255, 255);
+    font-weight: bold;  
 }
 
 nav li:hover
@@ -90,12 +93,12 @@ nav li:hover
 
 nav li:hover a
 {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .CurrentPage:hover a
 {
-    color: rgb(41, 41, 48);
+    color: rgb(255, 255, 255);
 }
 
 main
@@ -307,4 +310,28 @@ p
     font-size: 2em;
     box-sizing: border-box;
     padding: 2em;
+}
+
+.bacgroundImageIndex 
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url('images/VogelhuisAchtergrond.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.header-overlay h1 {
+    position: relative;
+    z-index: 2;
+    color: white;
+    background: rgba(71, 71, 71, 0.6);
+    padding: 20px 40px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0;
 }
