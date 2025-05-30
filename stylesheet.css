@@ -116,8 +116,18 @@ footer
     display: flex;
     bottom:0;
     width:100%;
+    height: auto;
     background-color: rgb(14, 139, 197);
 }
+
+footer p
+{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 input[type="text"]
 {    
