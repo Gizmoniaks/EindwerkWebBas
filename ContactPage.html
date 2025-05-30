@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav>
-        <img class="logo" src="Images/logo.png" alt="Logo van Vogels en vogelaars" class="logo">
+        <img class="logo" src="Images/logo.png" alt="Logo van Vogels en vogelaars">
         <ul>
             <li><a href="IndexPage.html">Home</a></li>
             <li><a href="WebStore.html">Winkel</a></li>
@@ -21,39 +21,39 @@
     <main>
         <h2>Neem contact met ons op</h2>
         <p>Heb je vragen of opmerkingen? Neem gerust contact met ons op.</p>
-        <form  class="ContactForm" method="post" action="https:jkorpela.fi/cgi-bin/echo.cgi">
+        <form class="ContactForm" method="post" action="https:jkorpela.fi/cgi-bin/echo.cgi">
             <label for="sex">Geslacht: </label>
             <label for="m">M: </label>
-            <input id="male" name="sex" type="radio" value="M">
+            <input id="m" name="sex" type="radio" value="M">
             <label for="v">V: </label>
-            <input id="female" name="sex" type="radio" value="F">
+            <input id="v" name="sex" type="radio" value="F">
             <label for="x">X: </label>
-            <input id="X" name="sex" type="radio" value="X" checked><br/>
+            <input id="x" name="sex" type="radio" value="X" checked>
             <label for="lastname">Familienaam: </label>
             <input id="lastname" name="lastname" type="text">
             <label for="firstname">Voornaam: </label>
-            <input id="firstname" name="firstname" type="text"><br/>
+            <input id="firstname" name="firstname" type="text">
             <label for="streetname">Straatnaam: </label>
             <input id="streetname" name="streetname" type="text">
             <label for="postalcode">Postcode: </label>
-            <input id= "postalcode" name="postalcode" type="text"><br/>
+            <input id="postalcode" name="postalcode" type="text">
             <label for="city">Plaats: </label>
             <input id="city" name="city" type="text">
             <label for="email">E-mail: </label>
-            <input id="email" name="email" type="text" required><br/>
+            <input id="email" name="email" type="email" required>
             <select id="questiontype" name="questiontype">
                 <option value="vraag">Vraag</option>
                 <option value="opmerking">Opmerking</option>
                 <option value="klacht">Klacht</option>
                 <option value="suggestie">Suggestie</option>
                 <option value="Andere">Andere</option>
-            </select><br/>
-            <label for="vraag">Bericht: </label><br/>
-            <textarea id="question" name="question" rows="4" cols="50" required></textarea><br/>
+            </select>
+            <label for="bericht">Bericht: </label>
+            <textarea id="question" name="question" rows="4" cols="50" required></textarea>
             <input type="submit" value="Verstuur" class="btnContactPage">
             <input type="reset" value="Reset" class="btnContactPage">
         </form>
-        <img src ="Images/chat.png" alt=""chatapp" class="chat">
+        <img src ="Images/chat.png" alt="chatapp" class="chat">
     </main>
     <footer>
         <p>Dit is een virtuele oefenfirma. Informatie, transacties en goederen op deze website zijn fictief en hebben louter educatieve doeleinden.</p>
