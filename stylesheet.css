@@ -1,7 +1,7 @@
 html 
 {
     font-family: "Roboto", sans-serif;
-    background-color:rgb(224, 230, 210);
+    background-color:rgb(181, 219, 238);
 }
 
 
@@ -18,8 +18,8 @@ h1
     top: 20px;
     text-align: center;
     border-radius: 5px;
-    color:white;
-    background-color: rgb(14, 139, 197);
+    color:rgb(255, 200, 55);
+    background-color: rgb(4, 83, 121);
     opacity: 0.6;
     padding: 20px;
     z-index: 2;
@@ -27,11 +27,11 @@ h1
 
 .logo
 {
+    grid: menu;
     height: auto;
     position: absolute;
     width: 200px;
-    top: 10%;
-    left: 10px;
+    z-index: 1;  
 }
 
 @keyframes wiggle {
@@ -61,11 +61,11 @@ h2
 {
     position: relative;
     text-align: center;
-    background-color: rgb(14, 139, 197);
-    color: white;
-    border: 2px solid rgb(14, 139, 197);
+    background-color:  rgb(4, 83, 121);
+    color: rgb(255, 200, 55);
+    border: 6px solid rgb(4, 83, 121);
     padding: 10px 100px;
-    border-radius: 15px;
+    border-radius: 15px 0px 0px 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -73,7 +73,7 @@ nav
 {
     display: flex;
     grid-area: menu;
-    background-color: rgb(14, 139, 197);
+    background-color: rgb(192, 139, 0);
     text-align: left;
     z-index: 3;
     border-radius: 15px;
@@ -100,7 +100,7 @@ nav a
     text-decoration: none;
     margin-right: 20px;
     padding: 10px 20px;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 200, 55);
     font-weight: bold;  
 }
 
@@ -112,12 +112,12 @@ nav li:hover
 
 nav li:hover a
 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 212, 101);
 }
 
 .CurrentPage:hover a
 {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 200, 55);
 }
 
 main
@@ -135,7 +135,7 @@ footer
     width: 100%;
     min-height: 50px;
     max-height: 100px;
-    background-color: rgb(14, 139, 197);
+    background-color: rgb(255, 97, 55);
     box-sizing: border-box;
     padding: 0 10px;
     overflow: hidden;
@@ -143,8 +143,8 @@ footer
 
 footer p
 {
-    color: white;
-    font-size: 1em;
+    color: rgb(192, 40, 0);
+    font-size: 0.8em;
     margin: 0;
     text-align: center;
     word-break: break-word;
@@ -171,16 +171,6 @@ select
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-}
-
-.containerWebshop 
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
 }
 
 .webshop
@@ -261,7 +251,7 @@ select
 .ContactForm
 {
     display: relative;
-    border: 1vmin solid rgb(14, 139, 197);
+    border: 1vmin solid rgb(192, 139, 0);
     border-radius: 15px;
     padding: 4%;
     align-items: center;
@@ -298,7 +288,7 @@ select
 
 .btnTweety 
 {
-    color: white;
+    color: rgb(181, 219, 238);
     background-color: transparent;
     border: none;
 }
