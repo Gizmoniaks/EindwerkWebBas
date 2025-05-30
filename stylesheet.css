@@ -132,9 +132,6 @@ table
 {
     width: 100%;
     border-collapse: separate;
-    border: 5px solid rgb(249, 180, 0);
-    border-radius: 15px;
-    border-spacing: 0 10px;
 }
 
 table td, th 
@@ -142,11 +139,11 @@ table td, th
     padding: 1em 1.5em;
     text-align: center;
     font-size: 1.1em;
+    border-radius: 15px 15px 0px 15px;
 }
 
 table th 
 {
-    
     background-color: rgb(4, 83, 121);
     color: rgb(255, 200, 55);
     font-weight: bold;
@@ -155,8 +152,9 @@ table th
 
 table tr:hover td
 {
-    background-color: rgb(255, 244, 200);
+    background-color: rgb(255, 212, 101);
     color: rgb(192, 40, 0);
+    border-bottom: rgb(252, 235, 194) 2px solid;
     transition: background 0.2s, color 0.2s;
 }
 footer
@@ -195,6 +193,31 @@ select
 {
     box-sizing: border-box;
     margin-bottom : 10px;
+}
+
+.LinksWebshop
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+    gap: 2em;
+}
+
+.LinksWebshop a
+{
+    text-decoration: none;
+    color: rgb(14, 139, 197);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.LinksWebshop :hover
+{
+    transform: scale(1.5);
+    transition: transform 0.3s ease-in-out;
 }
 
 .webshop
@@ -439,8 +462,13 @@ p
         padding-right: 0;
     }
 
-
-
+    .indexWebshop
+    {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
     .logo
     {
         margin: 10px auto 0 auto;
