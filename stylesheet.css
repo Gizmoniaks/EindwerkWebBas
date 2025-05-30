@@ -440,15 +440,9 @@ p
         display: none;
     }
 }
+
 @media screen and (max-width: 1050px) 
 {
-    .indexWebshop .webshopProduct:nth-of-type(2) 
-    {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 60em) {
     body {
         grid-template-columns: auto;
         grid-template-rows: 50px 100px auto 50px;
@@ -469,6 +463,7 @@ p
         margin-right: auto;
         display: block;
     }
+
     .logo
     {
         margin: 10px auto 0 auto;
@@ -487,26 +482,13 @@ p
         padding: 0;
     }
 
-    footer
-    {
-        font-size: 0.7em;
-        padding: 0 5px;
-        min-height: 40px;
-        max-height: 70px;
-    }
-
-    footer p
-    {
-        font-size: 0.7em;
-        padding: 0;
-    }
 
     .backgroundImageIndex 
     {
         height: 100px;
     }
     
-    .snap
+    /*.snap
     {
         height: 80vh;
     }
@@ -514,29 +496,35 @@ p
     .snap p
     {
         font-size: 1em;
+    }*/
+    .indexWebshop .webshopProduct:nth-of-type(2) 
+    {
+        display: none;
     }
+
+    table
+    {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.6em;
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+    th, td {
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+    }
+
 }
+
 
 @media screen and (max-width: 620px) 
 {
-    body
-    {
-        grid-template-columns: auto;
-        grid-template-rows: 50px 100px auto 50px;
-        grid-template-areas: "menu" "titel" "inhoud" "onderbalk";
-        align-items: stretch;
-        box-sizing: border-box;
-    }
-
     h2 
     {
         padding: 10px 10px;
         font-size: 1.1em;
-    }
-
-    .indexWebshop .webshopProduct:nth-of-type(2) 
-    {
-    display: none;
     }
 
     .logo
@@ -544,26 +532,21 @@ p
         width: 10%;
     }
 
-
-    nav ul
+    table
     {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        overflow-x: auto;
     }
 
-    footer
+    .LinksWebshop 
     {
-        font-size: 0.7em;
-        padding: 0 5px;
-        min-height: 40px;
-        max-height: 70px;
+        font-size: 0.6em;
     }
 
-    footer p
+    .indexWebshop 
     {
-        font-size: 0.7em;
-        padding: 0;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
+
 }
-
