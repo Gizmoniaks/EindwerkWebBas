@@ -55,7 +55,7 @@ h2
 
 nav
 {
-    display: grid;
+    display: flex;
     grid-area: menu;
     background-color: rgb(14, 139, 197);
     text-align: left;
@@ -69,13 +69,12 @@ nav ul
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 5%;
-    justify-content: center;
 }
 
 nav li
 {
     display: flex;
+    justify-items: flex-start;
     margin: 1em;
 }
 
