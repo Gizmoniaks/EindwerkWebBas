@@ -232,6 +232,18 @@ select
     margin-bottom: 2em;
 }
 
+.webshop h2
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 10px;
+    background-color: rgb(4, 83, 121);
+    color: rgb(255, 200, 55);
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .webshopProduct 
 {
     position: relative;
@@ -284,9 +296,9 @@ select
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(192, 40, 0);
+    background-color: rgb(255, 58, 6);
     color: white;
-    border: 2px solid rgb(192, 40, 0);
+    border: 2px solid rgb(255, 58, 6);
     padding: 10px 20px;
     border-radius: 15px;
 }
