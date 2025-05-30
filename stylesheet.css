@@ -27,11 +27,11 @@ h1
 
 .logo
 {
-    grid: menu;
+    display: block;
+    margin: 20px 0 0 0;
+    width: 120px;
     height: auto;
-    position: absolute;
-    width: 200px;
-    z-index: 1;  
+    align-self: flex-end; 
 }
 
 @keyframes wiggle {
@@ -72,12 +72,15 @@ h2
 nav
 {
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     grid-area: menu;
     background-color: rgb(192, 139, 0);
     text-align: left;
     z-index: 3;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding-right: 20px;
 }
 
 nav ul 
@@ -377,16 +380,18 @@ p
         align-items: stretch;
     }
     nav {
-        height: 50px;
-        min-height: 50px;
         display: flex;
+        flex-direction: row; 
         align-items: center;
+        padding-right: 0;
     }
 
     .logo
     {
+        margin: 10px auto 0 auto;
+        align-self: left;
         width: 12%;
-        left: 5px;
+        max-width: 50px;
     }
     
     nav ul {
@@ -395,7 +400,6 @@ p
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 100%;
         margin: 0;
         padding: 0;
     }
