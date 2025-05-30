@@ -505,7 +505,6 @@ p
     .logo
     {
         margin: 10px auto 0 auto;
-        align-self: left;
         width: 12%;
         max-width: 50px;
     }
